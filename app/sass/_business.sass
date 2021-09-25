@@ -1,0 +1,234 @@
+.business
+  overflow: hidden
+  .container
+    flex-direction: column
+    padding: 165px 0 100px 0
+    max-width: 1280px
+    border-right: 1px solid rgba(0, 36, 91, 0.1)
+    @media (max-width: 768px)
+      padding: 80px 0 0 0
+    .business__top
+      display: flex
+      flex-direction: column
+      position: relative
+      padding: 0 70px
+      margin-bottom: 50px
+      @media (max-width: 768px)
+        padding: 0 40px
+        margin-bottom: 40px
+      &:before
+        content: ''
+        position: absolute
+        left: 0
+        transform: translateX(-100%)
+        width: 220px
+        height: 100%
+        background: #FBB500
+        top: 0
+      h1
+        font-family: RamaGothicMW01-Heavy, sans-serif
+        font-style: normal
+        font-weight: 900
+        font-size: 144px
+        line-height: 100%
+        text-transform: uppercase
+        color: #00245B
+        @media (max-width: 768px)
+          font-size: 64px
+      .business__buttons
+        display: flex
+        background: #FFFFFF
+        border: 1px solid #E6EAEF
+        border-radius: 100px
+        margin-right: auto
+        overflow: hidden
+        margin-top: 20px
+        @media (max-width: 768px)
+          margin-top: 40px
+          width: 100%
+        .business-btn
+          cursor: pointer
+          padding: 12px 25px
+          font-family: Apotek, sans-serif
+          font-style: normal
+          font-weight: 800
+          font-size: 18px
+          line-height: 100%
+          text-transform: uppercase
+          color: #00245B
+          @media (max-width: 768px)
+            width: 50%
+            text-align: center
+            padding: 17px 0
+            font-size: 16px
+        .business-btn_active
+          background: #FBB500
+          border-radius: 100px
+    .business__cont
+      position: relative
+      .business__wrappers
+        display: flex
+        width: 100%
+        border-top: 1px solid rgba(0, 36, 91, 0.1)
+        .business__wrapper
+          display: flex
+          width: 100%
+          flex-direction: column
+          .business__item
+            cursor: pointer
+            display: flex
+            align-items: center
+            padding: 50px 70px 62px 70px
+            background: #FFFFFF
+            justify-content: space-between
+            width: 100%
+            position: relative
+            @media (max-width: 768px)
+              padding: 30px 40px
+            &:not(:last-child)
+              border-bottom: 1px solid rgba(0, 36, 91, 0.1)
+            &:hover
+              .business__text
+                .business-item-title
+                  color: #FFFFFF
+                .business-item-p
+                  color: #FFFFFF
+              .business__item-bg
+                img
+                  opacity: 1
+                  visibility: visible
+            .business__text
+              display: flex
+              flex-direction: column
+              max-width: 452px
+              z-index: 2
+              @media (max-width: 768px)
+                max-width: 100%
+              .business-number
+                font-family: Apotek, sans-serif
+                font-style: normal
+                font-weight: 633
+                font-size: 24px
+                line-height: 140%
+                letter-spacing: 0.05em
+                color: #FBB500
+                @media (max-width: 768px)
+                  font-size: 20px
+              .business-item-title
+                font-family: RamaGothicMW01-Heavy, sans-serif
+                font-style: normal
+                font-weight: 900
+                font-size: 48px
+                line-height: 100%
+                color: #00245B
+                margin: 10px 0 30px 0
+                padding-bottom: 20px
+                border-bottom: 1px solid #FBB500
+                transition-duration: 0.4s
+                @media (max-width: 768px)
+                  font-size: 36px
+                  margin: 10px 0 30px 0
+                  border: none
+                  max-width: 88px
+              .business-item-p
+                font-family: Roboto, sans-serif
+                font-style: normal
+                font-weight: normal
+                font-size: 16px
+                line-height: 140%
+                color: #00245B
+                transition-duration: 0.4s
+                @media (max-width: 768px)
+                  padding-top: 30px
+                  border-top: 1px solid #FBB500
+            .business__img
+              position: relative
+              width: 100%
+              max-width: 573px
+              height: 100%
+              display: flex
+              align-items: center
+              justify-content: center
+              @media (max-width: 768px)
+                max-width: 0
+                position: static
+              svg
+                @media (max-width: 768px)
+                  display: none
+              .business-flag
+                position: absolute
+                top: 0
+                object-fit: contain
+                height: 60px
+                width: 90px
+                right: 0
+                @media (max-width: 768px)
+                  right: 40px
+                  top: 30px
+                  width: 60px
+                  height: 40px
+            .business__item-bg
+              img
+                opacity: 0
+                visibility: hidden
+                position: absolute
+                width: 100%
+                height: 100%
+                transition-duration: 0.4s
+                left: 0
+                top: 0
+                z-index: 1
+      .business__cont-bg
+        .business__cont-bg-left
+          width: 220px
+          height: 100%
+          position: absolute
+          left: 0
+          transform: translateX(-100%)
+          top: 0
+          background: rgba(0, 36, 91, 0.1)
+          display: flex
+          align-items: center
+        .business__cont-bg-right
+          width: 220px
+          position: absolute
+          top: 0
+          height: 100%
+          right: 0
+          transform: translateX(100%)
+          display: flex
+          flex-direction: column
+          justify-content: space-between
+          align-items: flex-end
+          img
+            width: 144px
+
+.business_sus
+  .container
+    padding: 0 0 150px 0
+    @media (max-width: 768px)
+      padding: 80px 0 0 0
+    .business__top
+      &:before
+        height: 66px
+        top: 13px
+      h1
+        font-size: 96px
+        @media (max-width: 768px)
+          font-size: 64px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

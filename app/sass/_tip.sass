@@ -1,0 +1,190 @@
+.tip
+  .container
+    max-width: 1280px
+    flex-direction: column
+    padding: 0 70px 150px 70px
+    border-right: 1px solid rgba(0, 36, 91, 0.1)
+    position: relative
+    @media (max-width: 1024px)
+      padding: 0 40px 80px 40px
+    @media (max-width: 768px)
+      padding: 70px 40px 80px 40px
+    &:before
+      content: ''
+      position: absolute
+      width: 220px
+      bottom: 0
+      left: 0
+      transform: translateX(-100%)
+      height: calc(100% - 119px)
+      background: rgba(0, 36, 91, 0.05)
+    h1
+      margin-bottom: 70px
+      font-family: RamaGothicMW01-Heavy, sans-serif
+      font-style: normal
+      font-weight: 900
+      font-size: 96px
+      line-height: 100%
+      text-transform: uppercase
+      color: #00245B
+      position: relative
+      @media (max-width: 768px)
+        font-size: 64px
+        margin-bottom: 40px
+      &:after
+        content: ''
+        position: absolute
+        left: -70px
+        top: 13px
+        width: 220px
+        height: 68px
+        background: #FBB500
+        transform: translateX(-100%)
+    .tip__all
+      display: flex
+      flex-direction: column
+      position: relative
+      margin-bottom: 50px
+      &:before
+        content: ''
+        position: absolute
+        width: 1px
+        height: 100%
+        left: 125px
+        background: rgba(0, 36, 91, 0.2)
+        @media (max-width: 1024px)
+          left: 75px
+        @media (max-width: 768px)
+          left: 50px
+      .tip__item
+        display: flex
+        align-items: center
+        cursor: pointer
+        &:hover
+          .tip__number
+            &:after
+              height: 100%
+            span
+              opacity: 1
+              color: #FBB500
+        &:not(:last-child)
+          margin-bottom: 54px
+          @media (max-width: 768px)
+            margin-bottom: 40px
+        .tip__number
+          padding-right: 80px
+          width: 125px
+          position: relative
+          @media (max-width: 1024px)
+            padding-right: 40px
+            width: 75px
+          @media (max-width: 768px)
+            padding-right: 30px
+            width: 50px
+          &:after
+            content: ''
+            position: absolute
+            right: 0
+            top: 50%
+            transform: translateY(-50%)
+            height: 0
+            transition-duration: .4s
+            width: 4px
+            background: #FBB500
+          span
+            font-family: Apotek, sans-serif
+            font-style: normal
+            font-weight: 800
+            font-size: 48px
+            line-height: 100%
+            transition-duration: .4s
+            text-transform: uppercase
+            color: #00245B
+            opacity: 0.5
+            @media (max-width: 1024px)
+              font-size: 30px
+            @media (max-width: 768px)
+              font-size: 18px
+        .tip__text
+          padding-left: 70px
+          font-family: Roboto, sans-serif
+          font-style: normal
+          font-weight: bold
+          font-size: 24px
+          line-height: 140%
+          color: #00245B
+          @media (max-width: 1024px)
+            font-size: 20px
+            padding-left: 40px
+          @media (max-width: 768px)
+            font-size: 16px
+            padding-left: 30px
+    .tip__source
+      display: flex
+      margin-left: 125px
+      justify-content: space-between
+      padding: 30px 70px
+      background: #FFFFFF
+      border: 1px solid #E6EAEF
+      @media (max-width: 1024px)
+        margin-left: 0
+        padding: 30px 40px
+      @media (max-width: 768px)
+        flex-direction: column
+      .tip-source-title
+        font-family: Apotek, sans-serif
+        font-style: normal
+        font-weight: 800
+        font-size: 24px
+        line-height: 140%
+        text-transform: uppercase
+        color: #00245B
+        @media (max-width: 1024px)
+          font-size: 18px
+      .tip__links
+        @media (max-width: 768px)
+          display: flex
+          margin-top: 20px
+          flex-direction: column
+        span, a
+          font-family: Apotek, sans-serif
+          font-style: normal
+          font-weight: 633
+          font-size: 24px
+          line-height: 140%
+          color: #FBB500
+          @media (max-width: 1024px)
+            font-size: 18px
+        span
+          color: #00245b
+          @media (max-width: 768px)
+            display: none
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

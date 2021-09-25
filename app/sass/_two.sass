@@ -1,0 +1,243 @@
+.two
+  overflow: hidden
+  .container
+    max-width: 1280px
+    border-right: 1px solid rgba(0, 36, 91, 0.1)
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      width: 220px
+      transform: translateX(-100%)
+      background: rgba(0, 36, 91, 0.05)
+      height: calc(100% - 150px)
+      top: 0
+    h1
+      display: none
+    .two__wrapper
+      display: grid
+      width: 100%
+      padding: 0 70px 150px 70px
+      grid-template-columns: 1fr 1fr
+      grid-gap: 20px
+      @media (max-width: 1200px)
+        padding: 40px
+      @media (max-width: 768px)
+        grid-gap: 10px
+        grid-template-columns: 1fr
+      .two__item
+        display: flex
+        position: relative
+        padding: 214px 50px 50px 50px
+        cursor: pointer
+        @media (max-width: 1024px)
+          padding: 100px 40px 30px 40px
+        &:hover
+          .two__item-cont
+            .two-title
+              color: #00245B
+            .two__btn
+              span
+                color: #00245B
+              svg
+                path
+                  stroke: #00245B
+          .two__item-bg
+            .two__item-gradients
+              div
+                &:first-child
+                  opacity: 0
+                  visibility: hidden
+                &:last-child
+                  opacity: 1
+                  visibility: visible
+        .two__item-cont
+          position: relative
+          margin-top: auto
+          z-index: 2
+          .two-title
+            font-family: RamaGothicMW01-Heavy, sans-serif
+            font-style: normal
+            font-weight: 900
+            font-size: 64px
+            line-height: 100%
+            text-transform: uppercase
+            color: #FFFFFF
+            transition-duration: 0.4s
+            @media (max-width: 911px)
+              font-size: 48px
+          .two__btn
+            display: flex
+            align-items: center
+            cursor: pointer
+            margin-right: auto
+            margin-top: 10px
+            span
+              font-family: Apotek, sans-serif
+              font-style: normal
+              font-weight: 800
+              font-size: 16px
+              line-height: 140%
+              letter-spacing: 0.05em
+              text-transform: uppercase
+              color: #EA6510
+              margin-right: 10px
+              transition-duration: 0.4s
+            svg
+              path
+                transition-duration: 0.4s
+        .two__item-bg
+          img
+            position: absolute
+            object-fit: cover
+            left: 0
+            top: 0
+            width: 100%
+            height: 100%
+            z-index: 1
+          .two__item-gradients
+            div
+              &:first-child
+                position: absolute
+                left: 0
+                top: 0
+                width: 100%
+                height: 100%
+                background: linear-gradient(0deg, rgba(0, 36, 91, 0.7), rgba(0, 36, 91, 0.7))
+                z-index: 1
+                transition-duration: 0.4s
+              &:last-child
+                opacity: 0
+                visibility: hidden
+                position: absolute
+                left: 0
+                top: 0
+                width: 100%
+                height: 100%
+                background: linear-gradient(0deg, rgba(251, 181, 0, 0.9), rgba(251, 181, 0, 0.9))
+                z-index: 1
+                transition-duration: 0.4s
+    .two__container-bg
+      img
+        position: absolute
+        right: -76px
+        top: 0
+        transform: translateX(100%)
+
+.two_story
+  .container
+    padding-top: 150px
+    flex-direction: column
+    border-right: 0
+    @media (max-width: 1200px)
+      padding-top: 40px
+    &:before
+      height: calc(100% - 300px)
+      top: 50%
+      transform: translateX(-100%) translateY(-50%)
+    &:after
+      content: ''
+      position: absolute
+      right: 0
+      bottom: 0
+      height: 100%
+      background: linear-gradient(to bottom, rgba(230, 234, 239, 0), rgba(230, 234, 239, 1))
+      width: 1px
+    h1
+      font-family: RamaGothicMW01-Heavy, sans-serif
+      font-style: normal
+      font-weight: 900
+      font-size: 48px
+      line-height: 100%
+      text-transform: uppercase
+      color: #00245B
+      padding-left: 70px
+      margin-bottom: 50px
+      margin-right: 70px
+      display: block
+      @media (max-width: 1200px)
+        margin-bottom: -20px
+        margin-left: 40px
+        padding-left: 0
+        margin-right: 40px
+      @media (max-width: 768px)
+        font-size: 36px
+      span
+        color: #FBB500
+    .two__container-bg
+      img
+        bottom: 150px
+        top: auto
+.two_live
+  .container
+    padding-top: 0
+    border-right: 1px solid rgba(0, 36, 91, 0.1)
+    &:after
+      display: none
+    &:before
+      top: 0
+      bottom: auto
+      height: calc(100% - 150px)
+      transform: translateX(-100%)
+
+.two_brand-page
+  padding-top: 150px
+  @media (max-width: 1024px)
+    padding-top: 80px
+  .container
+    &:before
+      height: calc(100% - 296px)
+      bottom: 150px
+      top: auto
+    h1
+      margin-bottom: 50px
+      font-family: RamaGothicMW01-Heavy, sans-serif
+      font-style: normal
+      font-weight: 900
+      font-size: 96px
+      line-height: 100%
+      text-transform: uppercase
+      color: #00245B
+      position: relative
+      margin-left: 70px
+      padding-left: 0
+      @media (max-width: 1200px)
+        margin-left: 40px
+      @media (max-width: 1024px)
+        margin-bottom: -10px
+      @media (max-width: 768px)
+        font-size: 64px
+
+      &:after
+        content: ''
+        position: absolute
+        left: -70px
+        top: 50%
+        width: 220px
+        height: 68px
+        background: #FBB500
+        transform: translateX(-100%) translateY(-50%)
+    .two__wrapper
+      .two__item
+        padding-top: 392px
+        @media (max-width: 1024px)
+          padding-top: 250px
+        @media (max-width: 768px)
+          min-height: 240px
+          padding-top: 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

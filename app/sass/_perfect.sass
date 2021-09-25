@@ -1,0 +1,143 @@
+.perfect
+  position: relative
+  .container
+    max-width: 1280px
+    padding-left: 70px
+    position: relative
+    z-index: 2
+    border-left: 1px solid rgba(255,255,255,0.15)
+    @media (max-width: 768px)
+      flex-direction: column
+      padding: 80px 0 0 0
+    .perfect__left
+      display: flex
+      flex-direction: column
+      margin: auto 40px auto 0
+      @media (max-width: 768px)
+        padding: 0 40px 40px 40px
+        margin: 0
+      h1
+        font-family: RamaGothicMW01-Heavy, sans-serif
+        font-style: normal
+        font-weight: 900
+        font-size: 96px
+        line-height: 100%
+        text-transform: uppercase
+        max-width: 693px
+        color: #FFFFFF
+        position: relative
+        @media (max-width: 1024px)
+          font-size: 64px
+        @media (max-width: 768px)
+          max-width: 217px
+        &:after
+          content: ''
+          position: absolute
+          top: 50%
+          transform: translateY(-50%)
+          background: #FBB500
+          width: 4px
+          height: 160px
+          left: -70px
+          @media (max-width: 768px)
+            left: -40px
+            height: 100%
+      h2
+        font-family: Roboto, sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 18px
+        line-height: 140%
+        color: #FFFFFF
+        margin: 50px 0 70px 0
+        max-width: 560px
+        @media (max-width: 1024px)
+          font-size: 16px
+          margin: 30px 0 30px 0
+        @media (max-width: 768px)
+          max-width: 100%
+      .perfect-btn
+        font-family: Apotek, sans-serif
+        font-style: normal
+        font-weight: 716
+        font-size: 18px
+        line-height: 140%
+        letter-spacing: 0.05em
+        text-transform: uppercase
+        color: #FFFFFF
+        cursor: pointer
+        background: #FBB500
+        border: 1px solid rgba(255, 255, 255, 0.15)
+        backdrop-filter: blur(15px)
+        border-radius: 100px
+        padding: 13px 30px
+        margin-right: auto
+        @media (max-width: 768px)
+          margin: 0
+          width: 100%
+          text-align: center
+    .perfect__right
+      display: flex
+      flex-direction: column
+      margin-left: auto
+      min-width: 320px
+      border-left: 1px solid rgba(255,255,255,0.15)
+      border-right: 1px solid rgba(255,255,255,0.15)
+      @media (max-width: 768px)
+        min-width: auto
+        width: 100%
+        border: none
+      .perfect__item
+        display: flex
+        transition-duration: .4s
+        width: 100%
+        cursor: pointer
+        padding: 50px 70px
+        border-top: 1px solid rgba(255,255,255,0.15)
+        min-height: 160px
+        align-items: center
+        @media (max-width: 1024px)
+          padding: 50px 40px
+        @media (max-width: 768px)
+          padding: 30px 40px
+          min-height: auto
+          width: 100%
+        &:hover
+          background: #FBB500
+          .perfect-item-title
+            color: #00245B
+        &:not(:last-child)
+          border-bottom: 1px solid rgba(255,255,255,0.15)
+          @media (max-width: 768px)
+            border-bottom: none
+        .perfect-item-title
+          transition-duration: .4s
+          font-family: Apotek, sans-serif
+          font-style: normal
+          font-weight: 800
+          font-size: 24px
+          line-height: 120%
+          text-transform: uppercase
+          color: #FFFFFF
+  .bg
+    img
+      z-index: 1
+      width: 100%
+      height: 100%
+      position: absolute
+      left: 0
+      top: 0
+      object-fit: cover
+
+
+
+
+
+
+
+
+
+
+
+
+

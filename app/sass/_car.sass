@@ -1,0 +1,204 @@
+.car
+  margin-top: 120px
+  overflow: hidden
+  @media (max-width: 1024px)
+    margin-top: 65px
+  .bg
+    height: 500px
+    width: 100%
+    position: relative
+    overflow: hidden
+    @media (max-width: 1500px)
+      height: 400px
+    @media (max-width: 1024px)
+      height: 300px
+    img
+      &:first-child
+        width: 100%
+        height: 100%
+        object-fit: cover
+      &:nth-child(2)
+        width: 100%
+        position: absolute
+        height: 1489px
+        top: 50px
+        left: 0
+        @media (max-width: 1920px)
+          height: auto
+        @media (max-width: 768px)
+          top: 100px
+  .container
+    max-width: 1280px
+    flex-direction: column
+    border-right: 1px solid rgba(0, 36, 91, 0.1)
+    padding: 0 70px 150px 70px
+    position: relative
+    margin-top: -100px
+    @media (max-width: 1024px)
+      padding: 0 40px 40px 40px
+    @media (max-width: 768px)
+      padding: 0 0 40px 0
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      transform: translateX(-100%)
+      width: 220px
+      height: calc(100% - 416px)
+      bottom: 150px
+      background: rgba(0, 36, 91, 0.05)
+    h1
+      font-family: RamaGothicMW01-Heavy, sans-serif
+      font-style: normal
+      font-weight: 900
+      font-size: 96px
+      line-height: 100%
+      text-transform: uppercase
+      color: #00245B
+      position: relative
+      @media (max-width: 768px)
+        font-size: 64px
+        max-width: 280px
+        margin: 0 40px 10px 40px
+      &:after
+        content: ''
+        position: absolute
+        left: -70px
+        top: 13px
+        width: 220px
+        height: 204px
+        background: #FBB500
+        transform: translateX(-100%)
+    h2
+      font-family: Apotek, sans-serif
+      font-style: normal
+      font-weight: 716
+      font-size: 24px
+      line-height: 140%
+      letter-spacing: 0.05em
+      text-transform: uppercase
+      color: #FBB500
+      @media (max-width: 768px)
+        max-width: 220px
+        font-size: 18px
+        margin: 0 40px
+    h3
+      font-family: Roboto, sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 140%
+      color: #00245B
+      margin: 40px 0 100px 0
+      @media (max-width: 1024px)
+        margin: 30px 0 40px 0
+      @media (max-width: 768px)
+        font-size: 16px
+        margin: 30px 40px 40px 40px
+    .car__item
+      display: flex
+      width: 100%
+      justify-content: space-between
+      @media (max-width: 768px)
+        flex-direction: column
+      .car__img
+        width: 77.6%
+        margin-right: -452px
+        @media (max-width: 768px)
+          width: 100%
+          margin: 0
+          height: 260px
+        img
+          width: 100%
+          height: 100%
+          object-fit: cover
+      .car__text
+        display: flex
+        flex-direction: column
+        padding: 70px 100px
+        background: #00245B
+        width: 62%
+        margin-top: 146px
+        align-items: center
+        justify-content: center
+        @media (max-width: 1024px)
+          padding: 40px
+        @media (max-width: 768px)
+          width: 100%
+          margin: 0
+        .car-item-title
+          font-family: RamaGothicMW01-Heavy, sans-serif
+          font-style: normal
+          font-weight: 900
+          font-size: 72px
+          line-height: 100%
+          text-transform: uppercase
+          color: #FFFFFF
+          @media (max-width: 1024px)
+            font-size: 36px
+            margin-right: auto
+        .car-item-p
+          font-family: Roboto, sans-serif
+          font-style: normal
+          font-weight: normal
+          font-size: 18px
+          line-height: 140%
+          color: #FFFFFF
+          margin-top: 40px
+          @media (max-width: 1024px)
+            font-size: 16px
+            margin-top: 30px
+    h4
+      font-family: Apotek, sans-serif
+      font-style: normal
+      font-weight: 800
+      font-size: 36px
+      line-height: 140%
+      letter-spacing: 0.05em
+      text-transform: uppercase
+      color: #00245B
+      margin: 100px 0 30px 0
+      @media (max-width: 1024px)
+        margin: 40px 0 20px 0
+      @media (max-width: 768px)
+        font-size: 18px
+        margin: 40px 40px 20px 40px
+    h5
+      font-family: Roboto, sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 140%
+      color: #00245B
+      @media (max-width: 768px)
+        font-size: 16px
+      @media (max-width: 768px)
+        margin: 0 40px
+    .car__container-bg
+      img
+        position: absolute
+        right: -76px
+        top: 50%
+        transform: translateX(100%) translateY(-50%)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,411 @@
+.header
+  position: absolute
+  transition-duration: 0.4s
+  width: 100%
+  left: 0
+  top: 0
+  z-index: 10
+  padding: 0 20px
+  &:after
+    content: ''
+    position: absolute
+    left: 0
+    bottom: 0
+    height: 1px
+    background: #FFFFFF40
+    width: calc(50% - 97px)
+    @media (max-width: 1024px)
+      width: calc(50% - 64px)
+  &:before
+    content: ''
+    position: absolute
+    right: 0
+    bottom: 0
+    height: 1px
+    z-index: 2
+    background: #FFFFFF40
+    width: calc(50% - 97px)
+    @media (max-width: 1024px)
+      width: calc(50% - 64px)
+  .container
+    padding: 50px 0
+    @media (max-width: 1024px)
+      padding: 23px 0
+      justify-content: space-between
+    nav
+      display: flex
+      width: 100%
+      @media (max-width: 1024px)
+        display: none
+      .header__menu
+        display: flex
+        align-items: center
+        width: 100%
+        .header__link
+          cursor: pointer
+          &:not(:last-child)
+            margin-right: 40px
+            @media (max-width: 1600px)
+              margin-right: 25px
+          &:nth-child(5)
+            margin-right: auto
+          a
+            font-family: Apotek, sans-serif
+            font-style: normal
+            font-weight: 633
+            font-size: 18px
+            transition-duration: 0.4s
+            line-height: 22px
+            letter-spacing: 0.05em
+            text-transform: uppercase
+            color: #FFFFFF
+            @media (max-width: 1600px)
+              font-size: 14px
+        .header__burger
+          display: flex
+          align-items: center
+          svg
+            rect
+              transition-duration: 0.4s
+        .header__link_active
+          position: relative
+          &:after
+            content: ''
+            position: absolute
+            width: 100%
+            height: 4px
+            background: #FBB500
+            bottom: -49px
+            left: 0
+          a
+            color: #FBB500
+    .header__open-phone
+      display: none
+      position: relative
+      @media (max-width: 1024px)
+        display: flex
+      svg
+        transition-duration: .4s
+        &:last-child
+          opacity: 0
+          visibility: hidden
+          transition-duration: .4s
+          position: absolute
+          left: 50%
+          top: 50%
+          transform: translateY(-200%) translateX(-50%)
+    .header__open-phone_active
+      svg
+        &:first-child
+          opacity: 0
+          visibility: hidden
+        &:last-child
+          opacity: 1
+          visibility: visible
+          transform: translateY(-50%) translateX(-50%)
+    .header-home
+      display: none
+      @media (max-width: 1024px)
+        display: block
+      font-family: Apotek, sans-serif
+      font-style: normal
+      font-weight: 633
+      font-size: 16px
+      line-height: 19px
+      letter-spacing: 0.05em
+      transition-duration: .4s
+      text-transform: uppercase
+      color: #FFFFFF
+    .header__phone-wrapper
+      display: none
+      position: fixed
+      width: 100%
+      height: calc(100vh - 64px)
+      top: 64px
+      left: 0
+      padding: 0 20px
+      border-left: 1px solid rgba(255, 255, 255, 0.1)
+      background: rgba(0, 29, 72, 0.95)
+      backdrop-filter: blur(25px)
+      .header__phone
+        border-left: 1px solid rgba(255, 255, 255, 0.1)
+        flex-direction: column
+        display: flex
+        height: 100%
+        .header__phone-title
+          font-family: RamaGothicMW01-Heavy, sans-serif
+          font-style: normal
+          font-weight: 900
+          font-size: 64px
+          line-height: 100%
+          text-transform: uppercase
+          color: #FBB500
+          margin-top: 100px
+          margin-left: 40px
+        .header__phone-links
+          display: flex
+          flex-direction: column
+          padding: 0 40px
+          margin-top: 30px
+          .header__phone-link
+            font-family: Apotek, sans-serif
+            font-style: normal
+            font-weight: 800
+            font-size: 18px
+            line-height: 140%
+            letter-spacing: 0.05em
+            text-transform: uppercase
+            color: #FFFFFF
+            &:not(:last-child)
+              margin-bottom: 20px
+          .header__phone-link_active
+            color: #FBB500
+            position: relative
+            &:before
+              content: ''
+              position: absolute
+              left: -40px
+              height: 100%
+              width: 4px
+              background: #FBB500
+        .header__phone-socials
+          margin-top: auto
+          padding: 40px
+          display: flex
+          .header-phone-social
+            &:not(:last-child)
+              margin-right: 20px
+  .header__logo
+    position: absolute
+    left: 50%
+    bottom: -50px
+    transform: translate(-50%, 0)
+    z-index: 2
+    @media (max-width: 1300px)
+      bottom: -70px
+    @media (max-width: 1024px)
+      width: 93px
+      height: 60px
+      bottom: 0
+      transform: translateX(-50%) translateY(50%)
+    svg
+      transition-duration: 0.4s
+      @media (max-width: 1024px)
+        width: 93px
+        height: 60px
+      &:last-child
+        display: none
+      path
+        transition-duration: 0.4s
+  .header__mob
+    position: absolute
+    bottom: 0
+    left: 0
+    padding: 0 20px
+    transform: translateY(100%)
+    width: 100vw
+    background: rgba(0, 29, 72, 0.95)
+    backdrop-filter: blur(25px)
+    height: calc(100vh - 122px)
+    display: none
+    &:before
+      content: ''
+      position: absolute
+      left: 320px
+      top: 0
+      width: 1px
+      height: 100%
+      background: #FFFFFF1A
+    &:after
+      content: ''
+      position: absolute
+      right: 320px
+      top: 0
+      width: 1px
+      height: 100%
+      background: #FFFFFF1A
+    .header__mob-wrapper
+      display: flex
+      flex-direction: column
+      width: 100%
+      max-width: 1280px
+      height: 100%
+      padding: 100px 0 80px 0
+      margin: auto
+      &:after
+        content: ''
+        position: absolute
+        bottom: 0
+        width: 1px
+        height: calc(100vh - 190px)
+        background: #FFFFFF1A
+        left: 50%
+        transform: translateX(-50%)
+      .header__mob-top
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 70px
+        padding: 0 70px
+        .header__mob-title
+          font-family: RamaGothicMW01-Heavy, sans-serif
+          font-style: normal
+          font-weight: 900
+          font-size: 96px
+          line-height: 100%
+          text-transform: uppercase
+          color: #FBB500
+        .header__mob-close
+          display: flex
+          align-items: center
+          position: relative
+          cursor: pointer
+          &:after
+            content: ''
+            position: absolute
+            bottom: -20px
+            pointer-events: none
+            height: 1px
+            left: 0
+            width: calc(100% + 390px)
+            background: #FFFFFF1A
+          span
+            font-family: Roboto, sans-serif
+            font-style: normal
+            font-weight: bold
+            font-size: 16px
+            line-height: 19px
+            text-transform: uppercase
+            color: #FFFFFF
+            margin-right: 15px
+      .header__mob-menu
+        ul
+          display: grid
+          grid-template-columns: 1fr 1fr
+          grid-gap: 25px 0
+          li
+            padding-left: 70px
+            &:hover
+              a
+                color: #FBB500
+            a
+              transition-duration: 0.4s
+              font-family: Apotek, sans-serif
+              font-style: normal
+              font-weight: 800
+              font-size: 28px
+              line-height: 140%
+              letter-spacing: 0.05em
+              text-transform: uppercase
+              color: #FFFFFF
+          .header__mob-link_active
+            position: relative
+            &:after
+              content: ''
+              position: absolute
+              width: 4px
+              height: 18px
+              left: 0
+              top: 50%
+              transform: translateY(-50%)
+              background: #FBB500
+            a
+              color: #FBB500
+      .header__mob-socials
+        display: flex
+        align-items: center
+        margin-top: auto
+        margin-left: 70px
+        .header__mob-social
+          cursor: pointer
+          &:not(:last-child)
+            margin-right: 30px
+.header_white
+  background: #FFFFFF
+  .container
+    .header-home
+      color: #00245b
+    .header__open-phone
+      svg
+        rect
+          fill: #00245b
+    nav
+      .header__menu
+        .header__link
+          a
+            color: #00245B
+        .header__link_active
+          a
+            color: #FBB500
+        .header__burger
+          svg
+            rect
+              fill: #00245B
+  .header__logo
+    svg
+      &:first-child
+        path
+          fill: #00245B
+      &:last-child
+        display: block
+        position: absolute
+        left: 50%
+        top: 45%
+        transform: translate(-50%, -50%)
+        z-index: -1
+
+.header_active
+  background: rgba(0, 29, 72, 0.95)
+  backdrop-filter: blur(25px)
+  .container
+    .header-home
+      color: #FFFFFF
+  .header__logo
+    svg
+      &:last-child
+        opacity: 0
+        visibility: hidden
+      &:first-child
+        path
+          fill: #FFFFFF
+  .container
+    nav
+      .header__menu
+        .header__link
+          a
+            color: #FFFFFF
+        .header__link_active
+          a
+            color: #FBB500
+        .header__burger
+          svg
+            rect
+              fill: #FFFFFF
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

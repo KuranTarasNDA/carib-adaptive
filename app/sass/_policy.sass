@@ -1,0 +1,181 @@
+.policy
+  margin-top: 120px
+  overflow: hidden
+  @media (max-width: 1200px)
+    margin-top: 65px
+  .bg
+    width: 100%
+    height: 400px
+    @media (max-width: 1200px)
+      height: 300px
+    @media (max-width: 768px)
+      height: 165px
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  .container
+    flex-direction: column
+    max-width: 1280px
+    padding: 100px 70px 150px 70px
+    border-right: 1px solid rgba(0, 36, 91, 0.1)
+    position: relative
+    @media (max-width: 1024px)
+      padding: 80px 40px 40px 40px
+    @media (max-width: 768px)
+      padding: 80px 0 0 0
+    &:before
+      content: ''
+      position: absolute
+      width: 220px
+      height: calc(100% - 492px)
+      bottom: 150px
+      left: 0
+      transform: translateX(-100%)
+      background: rgba(0, 36, 91, 0.05)
+    h1
+      margin-bottom: 50px
+      font-family: RamaGothicMW01-Heavy, sans-serif
+      font-style: normal
+      font-weight: 900
+      font-size: 96px
+      line-height: 100%
+      text-transform: uppercase
+      color: #00245B
+      max-width: 712px
+      position: relative
+      @media (max-width: 768px)
+        font-size: 64px
+        margin: 0 40px 30px 40px
+      @media (max-width: 500px)
+        max-width: 292px
+      &:after
+        content: ''
+        position: absolute
+        left: -70px
+        top: 50%
+        width: 220px
+        height: 162px
+        background: #FBB500
+        transform: translateX(-100%) translateY(-50%)
+    h2
+      font-family: Roboto, sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 140%
+      color: #00245B
+      margin-bottom: 70px
+      @media (max-width: 768px)
+        font-size: 16px
+        margin: 0 40px 40px 40px
+    .policy__all
+      display: grid
+      grid-template-columns: 1fr 1fr
+      border-bottom: 1px solid rgba(0, 36, 91, 0.1)
+      border-right: 1px solid rgba(0, 36, 91, 0.1)
+      @media (max-width: 768px)
+        grid-template-columns: 1fr
+      .policy__item
+        display: flex
+        padding: 70px 100px
+        position: relative
+        cursor: pointer
+        border-top: 1px solid rgba(0, 36, 91, 0.1)
+        border-left: 1px solid rgba(0, 36, 91, 0.1)
+        @media (max-width: 1200px)
+          padding: 30px 40px
+        &:hover
+          .policy__text
+            .policy__item-top
+              .policy-title
+                color: #FFFFFF
+            .policy-p
+              color: #FFFFFF
+          .policy__item-img
+            opacity: 1
+            visibility: visible
+        .policy__text
+          display: flex
+          flex-direction: column
+          position: relative
+          z-index: 2
+          .policy__item-top
+            padding-bottom: 20px
+            margin-bottom: 90px
+            border-bottom: 1px solid #FBB500
+            @media (max-width: 768px)
+              margin-bottom: 30px
+            .policy-number
+              font-family: Apotek, sans-serif
+              font-style: normal
+              font-weight: 800
+              font-size: 24px
+              line-height: 100%
+              text-transform: uppercase
+              color: #FBB500
+              transition-duration: .4s
+              margin-bottom: 10px
+              @media (max-width: 768px)
+                font-size: 18px
+            .policy-title
+              font-family: Apotek, sans-serif
+              font-style: normal
+              font-weight: 800
+              font-size: 36px
+              line-height: 100%
+              transition-duration: .4s
+              text-transform: uppercase
+              color: #00245B
+              @media (max-width: 768px)
+                font-size: 24px
+          .policy-p
+            font-family: Roboto, sans-serif
+            font-style: normal
+            font-weight: normal
+            font-size: 18px
+            line-height: 140%
+            color: #00245B
+            transition-duration: .4s
+            @media (max-width: 768px)
+              font-size: 16px
+        .policy__item-img
+          width: 100%
+          opacity: 0
+          visibility: hidden
+          transition-duration: .4s
+          height: 100%
+          position: absolute
+          left: 0
+          top: 0
+          z-index: 1
+          img
+            width: 100%
+            height: 100%
+            object-fit: cover
+    .policy__container-bg
+      img
+        position: absolute
+        right: -76px
+        bottom: 150px
+        transform: translateX(100%)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

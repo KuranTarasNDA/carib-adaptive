@@ -1,0 +1,175 @@
+.late
+  overflow: hidden
+  .container
+    flex-direction: column
+    max-width: 1280px
+    padding: 100px 70px
+    border-right: 1px solid rgba(0, 36, 91, 0.1)
+    position: relative
+    @media (max-width: 1024px)
+      padding: 80px 40px 100px 40px
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      bottom: 0
+      height: calc(100% - 246px)
+      transform: translateX(-100%)
+      width: 220px
+      background: rgba(0, 36, 91, 0.05)
+    &:after
+      content: ''
+      position: absolute
+      bottom: 125px
+      left: 50%
+      transform: translateX(-50%)
+      width: calc(100% - 140px)
+      height: 1px
+      background: rgba(0, 36, 91, 0.1)
+      @media (max-width: 768px)
+        display: none
+    h1
+      margin-bottom: 50px
+      font-family: RamaGothicMW01-Heavy, sans-serif
+      font-style: normal
+      font-weight: 900
+      font-size: 96px
+      line-height: 100%
+      text-transform: uppercase
+      color: #00245B
+      position: relative
+      @media (max-width: 768px)
+        font-size: 64px
+      &:after
+        content: ''
+        position: absolute
+        left: -70px
+        top: 50%
+        width: 220px
+        height: 68px
+        background: #FBB500
+        transform: translateX(-100%) translateY(-50%)
+    .late__all
+      display: flex
+      flex-direction: column
+      .late__item
+        display: flex
+        flex-direction: column
+        &:not(:last-child)
+          margin-bottom: 100px
+          @media (max-width: 768px)
+            margin-bottom: 60px
+        .late__img
+          height: 400px
+          @media (max-width: 1024px)
+            height: 300px
+          @media (max-width: 768px)
+            height: 220px
+          img
+            width: 100%
+            height: 100%
+            object-fit: cover
+        .late__text
+          display: flex
+          flex-direction: column
+          margin-top: 20px
+          .late-date
+            font-family: Roboto, sans-serif
+            font-style: normal
+            font-weight: 500
+            font-size: 14px
+            line-height: 100%
+            letter-spacing: 0.05em
+            text-transform: uppercase
+            color: #00245B
+            opacity: 0.7
+            margin-bottom: 30px
+            @media (max-width: 768px)
+              margin-bottom: 20px
+          .late-title
+            font-family: Apotek, sans-serif
+            font-style: normal
+            font-weight: 800
+            font-size: 24px
+            line-height: 100%
+            letter-spacing: 0.05em
+            text-transform: uppercase
+            color: #00245B
+            @media (max-width: 768px)
+              font-size: 18px
+    .late-more
+      margin: 50px auto 0 auto
+      cursor: pointer
+      font-family: Apotek, sans-serif
+      font-style: normal
+      font-weight: 716
+      font-size: 18px
+      line-height: 140%
+      letter-spacing: 0.05em
+      text-transform: uppercase
+      color: #00245B
+      padding: 13px 30px
+      background: #FFFFFF
+      border: 1px solid #E6EAEF
+      backdrop-filter: blur(15px)
+      border-radius: 100px
+      position: relative
+      z-index: 1
+      @media (max-width: 768px)
+        width: 100%
+        text-align: center
+        margin-top: 60px
+    .late__container-bg
+      img
+        &:first-child
+          position: absolute
+          right: -76px
+          transform: translateX(100%)
+          top: 246px
+.late_corporate
+  .container
+    @media (max-width: 1024px)
+      padding-bottom: 60px
+    &:before
+      height: calc(100% - 396px)
+      bottom: 150px
+    .late__all
+      display: grid
+      grid-template-columns: 1fr 1fr
+      grid-gap: 100px 70px
+      @media (max-width: 1024px)
+        grid-gap: 40px
+      @media (max-width: 768px)
+        grid-template-columns: 1fr
+        grid-gap: 60px
+      .late__item
+        &:not(:last-child)
+          margin-bottom: 0
+    .late__container-bg
+      img
+        &:last-child
+          bottom: 150px
+          right: -76px
+          transform: translateX(100%)
+          position: absolute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

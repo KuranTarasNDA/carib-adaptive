@@ -1,0 +1,290 @@
+.envi
+  margin-top: 120px
+  overflow: hidden
+  @media (max-width: 1024px)
+    margin-top: 65px
+  .bg
+    width: 100%
+    height: 400px
+    @media (max-width: 1024px)
+      height: 300px
+    @media (max-width: 768px)
+      height: 165px
+    img
+      &:first-child
+        width: 100%
+        height: 100%
+        object-fit: cover
+      &:last-child
+        position: absolute
+        right: 0
+        z-index: -1
+        top: 286px
+        width: 48.9%
+        @media (max-width: 768px)
+          display: none
+  .container
+    flex-direction: column
+    max-width: 1280px
+    border-right: 1px solid rgba(0, 36, 91, 0.1)
+    padding: 100px 0 150px 0
+    position: relative
+    @media (max-width: 1024px)
+      padding: 80px 0 40px 0
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      transform: translateX(-100%)
+      width: 220px
+      height: calc(100% - 342px)
+      background: #F2F4F7
+      bottom: 0
+    .envi__top
+      padding: 0 70px
+      margin-bottom: 100px
+      @media (max-width: 1024px)
+        padding: 0 40px
+        margin-bottom: 40px
+      h1
+        margin-bottom: 50px
+        font-family: RamaGothicMW01-Heavy, sans-serif
+        font-style: normal
+        font-weight: 900
+        font-size: 96px
+        line-height: 100%
+        max-width: 493px
+        text-transform: uppercase
+        color: #00245B
+        position: relative
+        @media (max-width: 768px)
+          font-size: 64px
+          margin-bottom: 30px
+        &:after
+          content: ''
+          position: absolute
+          left: -70px
+          top: 50%
+          width: 220px
+          height: 168px
+          background: #FBB500
+          transform: translateX(-100%) translateY(-50%)
+      h2
+        font-family: Roboto, sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 18px
+        line-height: 140%
+        color: #00245B
+        @media (max-width: 768px)
+          font-size: 16px
+        span
+          color: #EA6510
+    .envi__all
+      display: flex
+      flex-direction: column
+      border-top: 1px solid rgba(0, 36, 91, 0.1)
+      .envi__item
+        cursor: pointer
+        padding: 50px 70px
+        position: relative
+        border-bottom: 1px solid rgba(0, 36, 91, 0.1)
+        @media (max-width: 1024px)
+          padding: 30px 40px
+        &:hover
+          .envi__item-img
+            opacity: 1
+            visibility: visible
+          .envi__item-wrapper
+            .envi__number
+              span
+                color: #FBB500
+            .envi__text
+              .envi-title
+                color: #FBB500
+              .envi-p
+                color: #FFFFFF
+              .envi__rows
+                .envi-rows-title
+                  color: #FFFFFF
+                .envi__rows-items
+                  .envi__row
+                    .envi__row-img
+                      svg
+                        path
+                          fill: #FFFFFF
+                    .envi__row-text
+                      color: #FFFFFF
+        .envi__item-wrapper
+          display: flex
+          position: relative
+          width: 100%
+          z-index: 2
+          @media (max-width: 768px)
+            flex-direction: column
+          .envi__number
+            padding-right: 70px
+            height: 100%
+            @media (max-width: 1024px)
+              padding-right: 40px
+            @media (max-width: 768px)
+              padding-right: 0
+            span
+              font-family: Montserrat, sans-serif
+              font-style: normal
+              font-weight: 800
+              transition-duration: 0.4s
+              font-size: 36px
+              line-height: 100%
+              color: #00245B
+              @media (max-width: 768px)
+                font-size: 18px
+          .envi__text
+            width: 100%
+            display: flex
+            flex-direction: column
+            padding-left: 70px
+            position: relative
+            @media (max-width: 1024px)
+              padding-left: 40px
+            @media (max-width: 768px)
+              padding-left: 0
+              padding-top: 25px
+              margin-top: 25px
+            &:after
+              content: ''
+              position: absolute
+              width: 1px
+              height: 100%
+              left: 0
+              background: #E6EAEF
+              @media (max-width: 768px)
+                width: 100%
+                height: 1px
+                left: 0
+                top: 0
+            .envi-title
+              font-family: Apotek, sans-serif
+              font-style: normal
+              transition-duration: 0.4s
+              font-weight: 800
+              font-size: 36px
+              line-height: 100%
+              color: #00245B
+              margin-bottom: 30px
+              @media (max-width: 768px)
+                margin-bottom: 20px
+            .envi-p
+              font-family: Roboto, sans-serif
+              font-style: normal
+              font-weight: normal
+              font-size: 18px
+              line-height: 140%
+              color: #00245B
+              transition-duration: 0.4s
+              max-width: 700px
+              @media (max-width: 768px)
+                font-size: 16px
+              a
+                color: #FBB500
+                text-decoration: underline
+            .envi__rows
+              display: flex
+              flex-direction: column
+              .envi-rows-title
+                font-family: Roboto, sans-serif
+                font-style: normal
+                font-weight: normal
+                font-size: 18px
+                line-height: 140%
+                transition-duration: .4s
+                color: #00245B
+              .envi__rows-items
+                margin-top: 30px
+                display: flex
+                flex-direction: column
+                .envi__row
+                  display: flex
+                  max-width: 375px
+                  border: 1px solid #E6EAEF
+                  box-sizing: border-box
+                  border-radius: 0 100px 100px 0
+                  align-items: center
+                  @media (max-width: 768px)
+                    max-width: 100%
+                  &:not(:last-child)
+                    margin-bottom: 20px
+                  .envi__row-img
+                    width: 60px
+                    height: 60px
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    border-right: 1px solid #E6EAEF
+                    svg
+                      path
+                        transition-duration: .4s
+                  .envi__row-text
+                    padding-left: 30px
+                    font-family: Roboto, sans-serif
+                    font-style: normal
+                    font-weight: 716
+                    font-size: 20px
+                    line-height: 100%
+                    letter-spacing: 0.05em
+                    text-transform: uppercase
+                    color: #00245b
+                    transition-duration: .4s
+                    @media (max-width: 768px)
+                      font-size: 16px
+                      padding-left: 20px
+                      padding-right: 20px
+                    span
+                      font-family: Apotek, sans-serif
+                      color: #EA6510
+        .envi__item-img
+          position: absolute
+          left: 0
+          top: 0
+          transition-duration: .4s
+          opacity: 0
+          visibility: hidden
+          z-index: 1
+          width: 100%
+          height: 100%
+          img
+            width: 100%
+            position: absolute
+            height: 100%
+            left: 0
+            top: 0
+            object-fit: cover
+          div
+            position: absolute
+            width: 100%
+            height: 100%
+            left: 0
+            top: 0
+            background: linear-gradient(270deg, rgba(0, 26, 66, 0.69) 0%, #001A42 77.89%)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

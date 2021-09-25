@@ -1,0 +1,376 @@
+.history
+  position: relative
+  overflow: hidden
+  .container
+    max-width: 1280px
+    flex-direction: column
+    padding-top: 636px
+    z-index: 4
+    padding-bottom: 220px
+    position: relative
+    @media (max-width: 1024px)
+      padding-top: 500px
+    @media (max-width: 450px)
+      padding-top: 400px
+    &:after
+      content: ''
+      position: absolute
+      width: 1px
+      height: 100%
+      background: rgba(0, 36, 91, 0.25)
+      left: 50%
+      transform: translateX(-50%)
+      top: 0
+      z-index: 1
+      @media (max-width: 768px)
+        left: 40px
+        z-index: 20
+        transform: translate(0)
+        display: none
+    h1
+      font-family: RamaGothicMW01-Heavy, sans-serif
+      font-style: normal
+      font-weight: 900
+      font-size: 96px
+      line-height: 105px
+      text-transform: uppercase
+      color: #00245B
+      position: relative
+      z-index: 3
+      @media (max-width: 768px)
+        font-size: 64px
+        line-height: 100%
+      &:after
+        content: ''
+        position: absolute
+        left: -70px
+        transform: translateX(-100%)
+        top: 13px
+        width: 100vw
+        height: 122px
+        background: rgba(0, 36, 91, 0.05)
+        @media (max-width: 768px)
+          left: -40px
+          background: #FBB500
+          height: 100%
+          top: 0
+          width: 4px
+    h2
+      font-family: Apotek, sans-serif
+      font-style: normal
+      font-weight: 800
+      font-size: 24px
+      line-height: 29px
+      text-transform: uppercase
+      color: #FBB500
+      margin-bottom: 36px
+      position: relative
+      z-index: 3
+      @media (max-width: 768px)
+        font-size: 20px
+        line-height: 24px
+        margin-top: 10px
+        margin-bottom: 30px
+    h1, h2
+      margin-left: 70px
+      @media (max-width: 768px)
+        margin-left: 44px
+        margin-right: 44px
+    .history__wrapper
+      position: relative
+      &:after
+        content: ''
+        position: absolute
+        width: 1px
+        height: 100%
+        background: rgba(0, 36, 91, 0.25)
+        top: 0
+        z-index: 1
+        left: 40px
+        transform: translate(0)
+        display: none
+        @media (max-width: 768px)
+          display: block
+          height: calc(100% + 220px)
+      .history__items
+        &:nth-child(2)
+          width: 50%
+          @media (max-width: 768px)
+            width: 100%
+          .history__item
+            &:first-child
+              @media (max-width: 768px)
+                margin-top: 90px
+            &:not(:last-child)
+              margin-bottom: 90px
+              @media (max-width: 768px)
+                margin-bottom: 60px
+            .history__item-text
+              padding-right: 70px
+              position: relative
+              display: flex
+              flex-direction: column
+              align-items: flex-end
+              margin-left: 40px
+              @media (max-width: 768px)
+                padding: 0 40px 0 30px
+                margin-left: 40px
+              .history-date
+                font-family: Apotek, sans-serif
+                font-style: normal
+                font-weight: 800
+                font-size: 20px
+                line-height: 100%
+                text-transform: uppercase
+                color: rgba(0, 36, 91, 0.7)
+                position: relative
+                @media (max-width: 1024px)
+                  font-size: 16px
+                @media (max-width: 768px)
+                  margin-right: auto
+                &:after
+                  content: ''
+                  position: absolute
+                  left: 0
+                  bottom: -15px
+                  height: 1px
+                  background: #FBB500
+                  width: calc(100% + 71px)
+                  @media (max-width: 768px)
+                    right: 0
+                    left: auto
+                    width: calc(100% + 30px)
+                &:before
+                  content: ''
+                  position: absolute
+                  width: 10px
+                  height: 10px
+                  border-radius: 50%
+                  background: #FBB500
+                  right: -75px
+                  opacity: 1
+                  bottom: -20px
+                  z-index: 2
+                  @media (max-width: 768px)
+                    left: -34px
+                    right: auto
+              .history-p
+                font-family: Roboto, sans-serif
+                font-style: normal
+                font-weight: 500
+                font-size: 16px
+                line-height: 140%
+                text-align: right
+                color: rgba(0, 36, 91, 0.7)
+                max-width: 315px
+                margin-top: 45px
+                @media (max-width: 1024px)
+                  margin-top: 40px
+                @media (max-width: 768px)
+                  max-width: 100%
+                  text-align: left
+                  margin-right: auto
+                  margin-top: 40px
+        &:first-child
+          display: grid
+          grid-template-columns: 1fr 1fr
+          @media (max-width: 768px)
+            grid-template-columns: 1fr
+            padding-left: 40px
+          .history__item
+            display: flex
+            @media (max-width: 768px)
+              position: relative
+            &:first-child
+              @media (max-width: 768px)
+                margin-top: 133px
+            &:not(:last-child)
+              @media (max-width: 768px)
+                margin-bottom: 180px!important
+            &:nth-child(2n)
+              flex-direction: row-reverse
+              margin-top: 229px
+              margin-bottom: -101px
+              @media (max-width: 768px)
+                flex-direction: row
+                margin: 0
+              .history__item-text
+                padding-right: 0
+                padding-left: 70px
+                align-items: flex-start
+                margin-top: 89px
+                @media (max-width: 768px)
+                  padding: 0 40px 0 30px
+                  margin-top: 0
+                .history-date
+                  &:after
+                    left: auto
+                    right: 0
+                    @media (max-width: 768px)
+                      right: 0
+                  &:before
+                    right: auto
+                    left: -75px
+                    @media (max-width: 768px)
+                      left: -35px
+                .history-title
+                  text-align: left
+                .history-p
+                  text-align: left
+              .history__item-img
+                margin: 0 -93px 0 -138px
+                @media (max-width: 768px)
+                  margin: 0
+            .history__item-img
+              margin-right: -129px
+              margin-left: -104px
+              width: 100%
+              max-width: 526px
+              height: 472px
+              @media (max-width: 768px)
+                position: absolute
+                z-index: -1
+                width: 280px
+                height: 252px
+                right: -80px
+                top: -140px
+                margin: 0
+              img
+                width: 100%
+                height: 100%
+                object-fit: contain
+            .history__item-text
+              padding-right: 70px
+              position: relative
+              display: flex
+              flex-direction: column
+              align-items: flex-end
+              margin-top: 60px
+              @media (max-width: 768px)
+                padding-right: 0
+                padding-left: 30px
+                margin-top: 0
+              .history-date
+                font-family: Apotek, sans-serif
+                font-style: normal
+                font-weight: 800
+                font-size: 20px
+                line-height: 100%
+                text-transform: uppercase
+                color: rgba(0, 36, 91, 0.7)
+                position: relative
+                @media (max-width: 768px)
+                  font-size: 16px
+                  text-align: left
+                  margin-right: auto
+                &:after
+                  content: ''
+                  position: absolute
+                  left: 0
+                  bottom: -15px
+                  height: 1px
+                  background: #FBB500
+                  width: calc(100% + 71px)
+                  @media (max-width: 768px)
+                    right: 0
+                    left: auto
+                    width: calc(100% + 30px)
+                &:before
+                  content: ''
+                  position: absolute
+                  width: 10px
+                  height: 10px
+                  border-radius: 50%
+                  background: #FBB500
+                  right: -77px
+                  opacity: 1
+                  bottom: -20px
+                  z-index: 2
+                  @media (max-width: 768px)
+                    right: auto
+                    left: -34px
+              .history-title
+                font-family: RamaGothicMW01-Heavy, sans-serif
+                font-style: normal
+                font-weight: 900
+                font-size: 48px
+                line-height: 100%
+                text-align: right
+                text-transform: uppercase
+                color: #00245B
+                max-width: 265px
+                margin: 45px 0 20px 0
+                @media (max-width: 1024px)
+                  font-size: 36px
+                  margin: 40px 0 15px 0
+                @media (max-width: 768px)
+                  text-align: left
+                  margin-right: auto
+                  max-width: 240px
+              .history-p
+                font-family: Roboto, sans-serif
+                font-style: normal
+                font-weight: 500
+                font-size: 16px
+                line-height: 140%
+                text-align: right
+                color: #00245B
+                color: rgba(0, 36, 91, 0.7)
+                max-width: 275px
+                @media (max-width: 768px)
+                  text-align: left
+                  max-width: 100%
+  .bg
+    img
+      position: absolute
+      width: 100%
+      &:first-child
+        height: 960px
+        object-fit: cover
+        left: 0
+        top: 0
+        z-index: 1
+        @media (max-width: 1024px)
+          height: 700px
+        @media (max-width: 768px)
+          height: 500px
+      &:nth-child(2)
+        top: 294px
+        left: 0
+        z-index: 2
+      &:nth-child(3)
+        bottom: 442px
+        left: 0
+        z-index: 3
+        transform: translateY(100%)
+        @media (max-width: 1500px)
+          bottom: 350px
+        @media (max-width: 1200px)
+          bottom: 280px
+        @media (max-width: 768px)
+          bottom: 200px
+  .gradient
+    width: 100%
+    height: 1576px
+    background: linear-gradient(to bottom, #FFFFFF00 0%, rgba(0, 36, 91, 0.15) 100%)
+    position: absolute
+    left: 0
+    bottom: -567px
+    z-index: 2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,127 @@
+.online
+  position: relative
+  overflow: hidden
+  .container
+    max-width: 1280px
+    flex-direction: column
+    border-right: 1px solid rgba(255,255,255,0.25)
+    border-left: 1px solid rgba(255,255,255,0.25)
+    position: relative
+    z-index: 3
+    padding: 100px 70px
+    @media (max-width: 768px)
+      padding: 80px 40px
+    .online__text
+      display: flex
+      flex-direction: column
+      h1
+        font-family: RamaGothicMW01-Heavy, sans-serif
+        font-style: normal
+        font-weight: 900
+        font-size: 96px
+        line-height: 100%
+        text-transform: uppercase
+        color: #00245B
+        position: relative
+        @media (max-width: 768px)
+          font-size: 64px
+        &:before
+          content: ''
+          position: absolute
+          left: -70px
+          width: 4px
+          height: 68px
+          background: #00245B
+          top: 50%
+          transform: translateY(-50%)
+        &:after
+          @media (max-width: 768px)
+            background: #00245b
+      h2
+        font-family: Roboto, sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 18px
+        line-height: 140%
+        color: #00245B
+        margin: 30px 0 40px 0
+        max-width: 452px
+        @media (max-width: 768px)
+          margin: 20px 0 40px
+          max-width: 100%
+          font-size: 16px
+      .online-btn
+        font-family: Apotek, sans-serif
+        font-style: normal
+        font-weight: 716
+        font-size: 18px
+        line-height: 140%
+        letter-spacing: 0.05em
+        text-transform: uppercase
+        color: #00245B
+        padding: 13px 30px
+        background: #FFFFFF
+        border: 1px solid rgba(255, 255, 255, 0.15)
+        backdrop-filter: blur(15px)
+        border-radius: 100px
+        margin-right: auto
+        cursor: pointer
+        @media (max-width: 768px)
+          width: 100%
+          text-align: center
+  .bg
+    img
+      height: 100%
+      width: 842px
+      right: 0
+      object-fit: cover
+      top: 0
+      position: absolute
+      z-index: 1
+      background: radial-gradient(57.14% 87.2% at 73.41% 28.46%, #707070 0%, #2E2E2E 100%)
+      @media (max-width: 768px)
+        left: 50%
+        transform: translateX(-50%)
+        right: auto
+    .gradient
+      width: 100%
+      position: absolute
+      z-index: 2
+      height: 100%
+      background: linear-gradient(90deg, #FBB500 34.9%, rgba(251, 181, 0, 0.8) 100%)
+      left: 0
+      top: 0
+    .gradient_two
+      width: 100%
+      position: absolute
+      z-index: 0
+      height: 100%
+      background: radial-gradient(57.14% 87.2% at 73.41% 28.46%, #707070 0%, #2E2E2E 100%)
+      left: 0
+      top: 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

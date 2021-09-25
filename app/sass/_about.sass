@@ -1,0 +1,173 @@
+.about
+  padding-top: 674px
+  position: relative
+  overflow: hidden
+  @media (max-width: 1400px)
+    padding-top: 500px
+  @media (max-width: 911px)
+    padding-top: 350px
+  @media (max-width: 768px)
+    padding-top: 300px
+  .container
+    max-width: 1280px
+    flex-direction: column
+    border-right: 1px solid rgba(0, 36, 91, 0.1)
+    position: relative
+    z-index: 2
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      bottom: 0
+      width: 220px
+      height: calc(100% - 134px)
+      background: rgba(0, 36, 91, 0.05)
+      transform: translateX(-100%)
+    h1
+      font-family: RamaGothicMW01-Heavy, sans-serif
+      font-style: normal
+      font-weight: 900
+      font-size: 96px
+      line-height: 100%
+      text-transform: uppercase
+      color: #00245B
+      position: relative
+      margin-left: 70px
+      @media (max-width: 768px)
+        font-size: 64px
+        margin-left: 40px
+      &:before
+        content: ''
+        position: absolute
+        left: -70px
+        background: #FBB500
+        transform: translateX(-100%) translateY(-50%)
+        width: 220px
+        height: 68px
+        top: 50%
+    h2
+      max-width: 777px
+      font-family: Roboto, sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 140%
+      letter-spacing: 0.05em
+      color: #00245B
+      margin: 50px 0 70px 70px
+      @media (max-width: 768px)
+        font-size: 16px
+        margin: 20px 40px 40px 40px
+    .about__wrapper
+      display: flex
+      height: 760px
+      @media (max-width: 768px)
+        flex-direction: column
+        height: auto
+      .about__left
+        width: 50%
+        height: 100%
+        @media (max-width: 768px)
+          width: 100%
+          height: 492px
+        img
+          width: 100%
+          height: 100%
+          object-fit: cover
+      .about__right
+        display: flex
+        flex-direction: column
+        width: 50%
+        @media (max-width: 768px)
+          width: 100%
+        .about__sub
+          display: flex
+          height: 100%
+          align-items: center
+          padding-left: 70px
+          cursor: pointer
+          transition-duration: 0.4s
+          width: 100%
+          background: #FFFFFF
+          @media (max-width: 768px)
+            padding: 36px 40px
+          &:hover
+            width: calc(100% + 70px)
+            background: #FBB500
+            margin-left: -70px
+            @media (max-width: 768px)
+              width: 100%
+              margin-left: 0
+          &:not(:last-child)
+            border-bottom: 1px solid rgba(0, 36, 91, 0.1)
+          &:first-child
+            border-top: 1px solid rgba(0, 36, 91, 0.1)
+          .about-number
+            font-family: RamaGothicMW01-Heavy, sans-serif
+            font-style: normal
+            font-weight: 900
+            font-size: 96px
+            line-height: 100%
+            text-transform: uppercase
+            color: #00245B
+            @media (max-width: 1024px)
+              font-size: 48px
+          .about-text
+            font-family: Apotek, sans-serif
+            font-style: normal
+            font-weight: 800
+            font-size: 36px
+            line-height: 110%
+            letter-spacing: 0.05em
+            text-transform: uppercase
+            color: #00245B
+            margin-left: 50px
+            @media (max-width: 1024px)
+              font-size: 24px
+              margin-left: 26px
+    .about__container-bg
+      img
+        position: absolute
+        top: 50%
+        transform: translateY(-50%) translateX(100%)
+        right: -76px
+  .bg
+    img
+      &:first-child
+        position: absolute
+        left: 0
+        top: 0
+        object-fit: cover
+        object-position: bottom
+        width: 100%
+        height: 815px
+        z-index: 1
+        @media (max-width: 1500px)
+          height: 600px
+        @media (max-width: 768px)
+          height: 400px
+      &:last-child
+        position: absolute
+        left: 0
+        top: 200px
+        width: 100%
+        z-index: 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

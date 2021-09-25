@@ -1,0 +1,319 @@
+.com
+  margin-top: 120px
+  overflow: hidden
+  @media (max-width: 1024px)
+    margin-top: 65px
+  .bg
+    width: 100%
+    height: 520px
+    @media (max-width: 1024px)
+      height: 400px
+    @media (max-width: 768px)
+      height: 165px
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  .container
+    max-width: 1280px
+    padding: 100px 0 175px 0
+    flex-direction: column
+    border-right: 1px solid rgba(0, 36, 91, 0.1)
+    position: relative
+    @media (max-width: 768px)
+      padding: 60px 0 80px
+    &:after
+      content: ''
+      position: absolute
+      width: 100%
+      height: 1px
+      left: 0
+      bottom: 200px
+      background: rgba(0, 36, 91, 0.1)
+      @media (max-width: 768px)
+        display: none
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      transform: translateX(-100%)
+      width: 220px
+      height: calc(100% - 446px)
+      bottom: 200px
+      background: rgba(0, 36, 91, 0.05)
+    h1
+      margin: 0 70px 50px 70px
+      font-family: RamaGothicMW01-Heavy, sans-serif
+      font-style: normal
+      font-weight: 900
+      font-size: 96px
+      line-height: 100%
+      text-transform: uppercase
+      color: #00245B
+      position: relative
+      @media (max-width: 1200px)
+        margin: 0 40px 30px 40px
+      @media (max-width: 768px)
+        font-size: 64px
+      &:after
+        content: ''
+        position: absolute
+        left: -70px
+        top: 50%
+        width: 220px
+        height: 68px
+        background: #FBB500
+        transform: translateX(-100%) translateY(-50%)
+    h2
+      font-family: Roboto, sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 140%
+      color: #00245B
+      margin: 0 70px
+      @media (max-width: 1200px)
+        margin: 0 40px
+      @media (max-width: 768px)
+        font-size: 16px
+    .com__rows
+      display: flex
+      margin-top: 100px
+      flex-direction: column
+      @media (max-width: 1200px)
+        margin-top: 40px
+      .com__row
+        display: flex
+        flex-direction: column
+        &:not(:last-child)
+          padding: 0 70px
+          margin-bottom: 100px
+          @media (max-width: 1200px)
+            padding: 0 40px
+            margin-bottom: 40px
+          @media (max-width: 768px)
+            padding: 0
+        &:last-child
+          .com-title
+            margin-left: 70px
+            @media (max-width: 1024px)
+              margin-left: 40px
+            @media (max-width: 768px)
+              margin-left: 0
+        .com-title
+          font-family: Apotek, sans-serif
+          font-style: normal
+          font-weight: 800
+          font-size: 36px
+          line-height: 100%
+          text-transform: uppercase
+          color: #EA6510
+          margin-bottom: 50px
+          @media (max-width: 768px)
+            font-size: 18px
+            margin-bottom: 20px
+            padding: 0 40px
+        .com__culture
+          display: flex
+          flex-direction: column
+          .com__culture-img
+            width: 100%
+            height: 360px
+            margin-bottom: 30px
+            @media (max-width: 768px)
+              height: 280px
+            img
+              width: 100%
+              height: 100%
+              object-fit: cover
+          .com__culture-text
+            font-family: Roboto, sans-serif
+            font-style: normal
+            font-weight: normal
+            font-size: 18px
+            line-height: 140%
+            color: #00245B
+            @media (max-width: 768px)
+              padding: 0 40px 0 40px
+              font-size: 16px
+        .com__sport
+          display: flex
+          justify-content: space-between
+          @media (max-width: 1024px)
+            flex-direction: column
+          .com__sport-left
+            display: flex
+            height: 420px
+            width: 43.8%
+            @media (max-width: 1024px)
+              width: 100%
+            @media (max-width: 768px)
+              height: 240px
+            img
+              width: 50%
+              height: 100%
+              object-fit: cover
+          .com__sport-right
+            display: flex
+            width: 56.2%
+            @media (max-width: 1024px)
+              width: 100%
+            @media (max-width: 768px)
+              flex-direction: column
+            .com__sport-text
+              padding: 0 70px
+              margin: auto 0
+              width: 61%
+              font-family: Roboto, sans-serif
+              font-style: normal
+              font-weight: normal
+              font-size: 18px
+              line-height: 140%
+              color: #00245B
+              @media (max-width: 1200px)
+                padding: 0 40px
+              @media (max-width: 1024px)
+                width: 50%
+              @media (max-width: 768px)
+                width: 100%
+                padding: 30px 40px
+            .com__sport-img
+              height: 420px
+              width: 39%
+              @media (max-width: 1024px)
+                width: 50%
+              @media (max-width: 768px)
+                width: 100%
+                height: 240px
+              img
+                width: 100%
+                height: 100%
+                object-fit: cover
+        .com__partnership
+          display: flex
+          flex-direction: column
+          border-bottom: 1px solid rgba(0, 36, 91, 0.1)
+          .com__partner
+            border-left: 1px solid rgba(0, 36, 91, 0.1)
+            border-top: 1px solid rgba(0, 36, 91, 0.1)
+            display: flex
+            position: relative
+            cursor: pointer
+            padding: 50px 70px
+            @media (max-width: 1024px)
+              padding: 40px
+            &:hover
+              .com__partner-img
+                img
+                  opacity: 1
+                  visibility: visible
+              .com__partner-text
+                .com-partner-title
+                  color: #FFFFFF
+                .com__partner-btn
+                  span
+                    color: #FBB500
+                  svg
+                    path
+                      stroke: #FBB500
+            .com__partner-text
+              position: relative
+              z-index: 2
+              .com-partner-title
+                font-family: RamaGothicMW01-Heavy, sans-serif
+                font-style: normal
+                transition-duration: 0.4s
+                font-weight: 900
+                font-size: 72px
+                line-height: 100%
+                text-transform: uppercase
+                color: #00245B
+                @media (max-width: 768px)
+                  font-size: 36px
+              .com__partner-btn
+                display: flex
+                align-items: center
+                cursor: pointer
+                margin-right: auto
+                margin-top: 20px
+                span
+                  transition-duration: 0.4s
+                  font-family: Apotek, sans-serif
+                  font-style: normal
+                  font-weight: 716
+                  font-size: 18px
+                  line-height: 140%
+                  letter-spacing: 0.05em
+                  text-transform: uppercase
+                  color: #00245B
+                  margin-right: 15px
+                svg
+                  path
+                    transition-duration: 0.4s
+                    stroke: #00245b
+            .com__partner-img
+              img
+                width: 100%
+                transition-duration: .4s
+                opacity: 0
+                visibility: hidden
+                z-index: 1
+                height: 100%
+                position: absolute
+                left: 0
+                top: 0
+                object-fit: cover
+    .com-more
+      position: relative
+      z-index: 1
+      font-family: Apotek, sans-serif
+      font-style: normal
+      font-weight: 716
+      font-size: 18px
+      line-height: 140%
+      letter-spacing: 0.05em
+      text-transform: uppercase
+      color: #00245B
+      background: #FFFFFF
+      border: 1px solid #E6EAEF
+      backdrop-filter: blur(15px)
+      border-radius: 100px
+      padding: 13px 30px
+      margin: 50px auto 0 auto
+      cursor: pointer
+      @media (max-width: 768px)
+        margin: 30px 40px 0 40px
+        width: calc(100% - 80px)
+        text-align: center
+    .com__container-bg
+      img
+        position: absolute
+        right: -76px
+        transform: translateX(100%) translateY(-50%)
+        top: 50%
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
