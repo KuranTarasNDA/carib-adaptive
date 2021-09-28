@@ -6,7 +6,7 @@
     border-right: 1px solid rgba(0, 36, 91, 0.1)
     position: relative
     @media (max-width: 1024px)
-      padding: 80px 40px 60px 40px
+      padding: 80px 40px 40px 40px
     h1
       margin-bottom: 40px
       font-family: RamaGothicMW01-Heavy, sans-serif
@@ -48,9 +48,17 @@
       .recent__item
         display: flex
         flex-direction: column
+        &:hover
+          .recent__img
+            opacity: .8
+          .recent__text
+            span
+              &:last-child
+                color: #FBB500
         .recent__img
           height: 240px
           width: 100%
+          transition-duration: .4s
           @media (max-width: 1024px)
             height: 220px
           img
@@ -75,8 +83,9 @@
             &:last-child
               font-family: Apotek, sans-serif
               font-style: normal
+              transition-duration: .4s
               font-weight: 800
-              font-size: 18px
+              font-size: 17px
               line-height: 100%
               letter-spacing: 0.05em
               text-transform: uppercase

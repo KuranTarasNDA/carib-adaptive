@@ -1,6 +1,9 @@
 .log
   border-top: 1px solid rgba(0, 36, 91, 0.1)
   margin-top: 122px
+  transform: translateY(0)
+  opacity: 1
+  visibility: visible
   @media (max-width: 1024px)
     margin-top: 65px
   .container
@@ -88,6 +91,9 @@
           margin-top: 20px
         a
           color: #EA6510
+          transition-duration: .4s
+          &:hover
+            color: #FBB500
       .log__check
         display: flex
         label
@@ -123,9 +129,12 @@
         border-radius: 100px
         padding: 13px 30px
         margin: 50px auto 30px auto
+        transition-duration: .4s
         @media (max-width: 768px)
           margin: 40px 0 25px 0
           width: 100%
+        &:hover
+          background: #00245b
       .log-sign
         font-family: Roboto, sans-serif
         font-style: normal
@@ -136,6 +145,9 @@
         color: #00245B
         a
           color: #EA6510
+          transition-duration: .4s
+          &:hover
+            color: #FBB500
 
 
 

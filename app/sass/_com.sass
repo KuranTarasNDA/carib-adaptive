@@ -1,6 +1,9 @@
 .com
   margin-top: 120px
   overflow: hidden
+  transform: translateY(0)
+  opacity: 1
+  visibility: visible
   @media (max-width: 1024px)
     margin-top: 65px
   .bg
@@ -21,7 +24,7 @@
     border-right: 1px solid rgba(0, 36, 91, 0.1)
     position: relative
     @media (max-width: 768px)
-      padding: 60px 0 80px
+      padding: 60px 0 40px 0
     &:after
       content: ''
       position: absolute
@@ -104,7 +107,7 @@
           font-family: Apotek, sans-serif
           font-style: normal
           font-weight: 800
-          font-size: 36px
+          font-size: 35px
           line-height: 100%
           text-transform: uppercase
           color: #EA6510
@@ -241,7 +244,7 @@
                   font-family: Apotek, sans-serif
                   font-style: normal
                   font-weight: 716
-                  font-size: 18px
+                  font-size: 17px
                   line-height: 140%
                   letter-spacing: 0.05em
                   text-transform: uppercase
@@ -269,7 +272,7 @@
       font-family: Apotek, sans-serif
       font-style: normal
       font-weight: 716
-      font-size: 18px
+      font-size: 17px
       line-height: 140%
       letter-spacing: 0.05em
       text-transform: uppercase
@@ -281,10 +284,14 @@
       padding: 13px 30px
       margin: 50px auto 0 auto
       cursor: pointer
+      transition-duration: .4s
       @media (max-width: 768px)
         margin: 30px 40px 0 40px
         width: calc(100% - 80px)
         text-align: center
+      &:hover
+        background: #FBB500
+        border-color: #FBB500
     .com__container-bg
       img
         position: absolute

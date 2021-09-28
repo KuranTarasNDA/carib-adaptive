@@ -354,11 +354,15 @@
       backdrop-filter: blur(15px)
       border-radius: 100px
       cursor: pointer
+      transition-duration: .4s
       @media (max-width: 768px)
         transform: translate(0)
         position: static
         margin: 0 40px
         text-align: center
+      &:hover
+        background: #00245b
+        border-color: #00245b
   .bg
     img
       display: none

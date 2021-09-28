@@ -53,12 +53,17 @@
         @media (max-width: 768px)
           overflow: auto
           margin: 0
-        img
+        svg
           width: 100%
           height: 100%
           object-fit: contain
           @media (max-width: 768px)
             width: 1500px
+          path
+            transition-duration: .15s
+            &:hover
+              fill: #FBB500
+              fill-opacity: 1
       .distribution__text
         p
           position: absolute
@@ -109,7 +114,7 @@
             font-family: Apotek, sans-serif
             font-style: normal
             font-weight: 800
-            font-size: 24px
+            font-size: 25px
             line-height: 120%
             text-transform: uppercase
             color: #00245B

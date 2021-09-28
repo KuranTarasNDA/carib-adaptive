@@ -52,10 +52,15 @@
           font-family: Apotek, sans-serif
           font-style: normal
           font-weight: 800
-          font-size: 18px
+          font-size: 17px
+          transition-duration: .4s
           line-height: 100%
           text-transform: uppercase
           color: #00245B
+          border-radius: 100px
+          &:hover
+            background: #FBB500
+            color: #00245b
           @media (max-width: 768px)
             width: 50%
             text-align: center
@@ -63,7 +68,7 @@
             font-size: 16px
         .business-btn_active
           background: #FBB500
-          border-radius: 100px
+
     .business__cont
       position: relative
       .business__wrappers
@@ -71,7 +76,7 @@
         width: 100%
         border-top: 1px solid rgba(0, 36, 91, 0.1)
         .business__wrapper
-          display: flex
+          display: none
           width: 100%
           flex-direction: column
           .business__item
@@ -178,6 +183,8 @@
                 left: 0
                 top: 0
                 z-index: 1
+        .business__wrapper_active
+          display: flex
       .business__cont-bg
         .business__cont-bg-left
           width: 220px

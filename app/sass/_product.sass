@@ -1,6 +1,9 @@
 .product
   margin-top: 120px
   overflow: hidden
+  transform: translateY(0)
+  opacity: 1
+  visibility: visible
   @media (max-width: 1024px)
     margin-top: 65px
   .container
@@ -160,6 +163,9 @@
         .product__socials
           display: flex
           .product__social
+            transition-duration: .4s
+            &:hover
+              opacity: 0.7
             &:not(:last-child)
               margin-right: 30px
       .product__right
@@ -238,7 +244,7 @@
               font-family: Apotek, sans-serif
               font-style: normal
               font-weight: 716
-              font-size: 18px
+              font-size: 17px
               line-height: 140%
               letter-spacing: 0.05em
               text-transform: uppercase
@@ -264,7 +270,7 @@
       margin: 0 auto
       position: relative
       @media (max-width: 1024px)
-        padding: 0 40px 40px 40px
+        padding: 0 40px 80px 40px
       &:before
         content: ''
         position: absolute
@@ -345,7 +351,7 @@
             font-style: normal
             transition-duration: .4s
             font-weight: 800
-            font-size: 24px
+            font-size: 23px
             line-height: 100%
             text-transform: uppercase
             color: #00245B

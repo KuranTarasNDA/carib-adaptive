@@ -249,6 +249,80 @@ $(window).on("load" , function () {
 
 
 
+    $('.perfect__item').each(function (index) {
+        $(this).on('click', () => {
+            $('.perfect__left').removeClass('perfect__left_active')
+            $('.perfect__left').eq(index).addClass('perfect__left_active')
+        })
+    })
+
+
+
+
+    $('.header__mob-link').each(function (index) {
+        $(this).hover (
+            function () {
+                $('.header__sub-ul').eq(index).addClass('ul_active')
+            }, function () {
+                $('.header__sub-ul').eq(index).removeClass('ul_active')
+            }
+        )
+    })
+    $('.header__sub-ul').each(function () {
+        $(this).hover(
+            function () {
+                $(this).addClass('ul_active')
+            }, function () {
+                $(this).removeClass('ul_active')
+            }
+        )
+    })
+
+
+
+    $('.business-btn').each(function (index) {
+        $(this).on('click', () => {
+            $('.business-btn').removeClass('business-btn_active')
+            $(this).addClass('business-btn_active')
+            $('.business__wrapper').removeClass('business__wrapper_active')
+            $('.business__wrapper').eq(index).addClass('business__wrapper_active')
+        })
+    })
+
+
+    //ANIMATIONS
+
+    if ($(window).width() >= 1024) {
+        $(window).on('scroll', () => {
+            $('section').each(function (index) {
+                if ($(this).offset().top - $(window).height() + 200 <= $(window).scrollTop()) {
+                    $(this).addClass('section_active')
+                }
+            })
+        })
+        $('section').each(function (index) {
+            if ($(this).offset().top - $(window).height() + 200 <= $(window).scrollTop()) {
+                $(this).addClass('section_active')
+            }
+        })
+    } else {
+        $(window).on('scroll', () => {
+            $('section').each(function (index) {
+                if ($(this).offset().top - $(window).height() - 50 <= $(window).scrollTop()) {
+                    $(this).addClass('section_active')
+                }
+            })
+        })
+        $('section').each(function (index) {
+            if ($(this).offset().top - $(window).height() - 50 <= $(window).scrollTop()) {
+                $(this).addClass('section_active')
+            }
+        })
+    }
+
+
+
+
 
 })
 

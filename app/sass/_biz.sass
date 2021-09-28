@@ -3,6 +3,9 @@
   display: flex
   flex-direction: column
   overflow: hidden
+  transform: translateY(0)
+  opacity: 1
+  visibility: visible
   @media (max-width: 1024px)
     margin-top: 65px
   .biz__bg
@@ -131,7 +134,7 @@
           font-family: Apotek, sans-serif
           font-style: normal
           font-weight: 716
-          font-size: 18px
+          font-size: 17px
           line-height: 140%
           text-transform: uppercase
           color: #FFFFFF
@@ -142,9 +145,12 @@
           backdrop-filter: blur(15px)
           border-radius: 100px
           padding: 13px 30px
+          transition-duration: .4s
           @media (max-width: 1024px)
             width: 100%
             text-align: center
+          &:hover
+            background: #00245b
     .biz__container-bg
       img
         position: absolute

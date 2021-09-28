@@ -1,6 +1,9 @@
 .history
   position: relative
   overflow: hidden
+  transform: translateY(0)
+  opacity: 1
+  visibility: visible
   .container
     max-width: 1280px
     flex-direction: column
@@ -59,7 +62,7 @@
       font-family: Apotek, sans-serif
       font-style: normal
       font-weight: 800
-      font-size: 24px
+      font-size: 23px
       line-height: 29px
       text-transform: uppercase
       color: #FBB500
@@ -320,6 +323,7 @@
                 @media (max-width: 768px)
                   text-align: left
                   max-width: 100%
+                  padding-right: 20px
   .bg
     img
       position: absolute

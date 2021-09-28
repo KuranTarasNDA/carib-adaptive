@@ -43,6 +43,9 @@
         width: 100%
         .header__link
           cursor: pointer
+          &:hover
+            a
+              color: #FBB500
           &:not(:last-child)
             margin-right: 40px
             @media (max-width: 1600px)
@@ -53,7 +56,7 @@
             font-family: Apotek, sans-serif
             font-style: normal
             font-weight: 633
-            font-size: 18px
+            font-size: 17px
             transition-duration: 0.4s
             line-height: 22px
             letter-spacing: 0.05em
@@ -64,6 +67,10 @@
         .header__burger
           display: flex
           align-items: center
+          &:hover
+            svg
+              rect
+                fill: #FBB500
           svg
             rect
               transition-duration: 0.4s
@@ -75,7 +82,7 @@
             width: 100%
             height: 4px
             background: #FBB500
-            bottom: -49px
+            bottom: -50px
             left: 0
           a
             color: #FBB500
@@ -110,7 +117,7 @@
       font-family: Apotek, sans-serif
       font-style: normal
       font-weight: 633
-      font-size: 16px
+      font-size: 15px
       line-height: 19px
       letter-spacing: 0.05em
       transition-duration: .4s
@@ -199,36 +206,21 @@
         transition-duration: 0.4s
   .header__mob
     position: absolute
-    bottom: 0
+    top: 122px
     left: 0
     padding: 0 20px
-    transform: translateY(100%)
     width: 100vw
     background: rgba(0, 29, 72, 0.95)
     backdrop-filter: blur(25px)
     height: calc(100vh - 122px)
     display: none
-    &:before
-      content: ''
-      position: absolute
-      left: 320px
-      top: 0
-      width: 1px
-      height: 100%
-      background: #FFFFFF1A
-    &:after
-      content: ''
-      position: absolute
-      right: 320px
-      top: 0
-      width: 1px
-      height: 100%
-      background: #FFFFFF1A
     .header__mob-wrapper
       display: flex
       flex-direction: column
       width: 100%
       max-width: 1280px
+      border-left: 1px solid #FFFFFF1A
+      border-right: 1px solid #FFFFFF1A
       height: 100%
       padding: 100px 0 80px 0
       margin: auto
@@ -260,6 +252,12 @@
           align-items: center
           position: relative
           cursor: pointer
+          &:hover
+            span
+              color: #FBB500
+            svg
+              path
+                fill: #FBB500
           &:after
             content: ''
             position: absolute
@@ -270,6 +268,7 @@
             width: calc(100% + 390px)
             background: #FFFFFF1A
           span
+            transition-duration: .4s
             font-family: Roboto, sans-serif
             font-style: normal
             font-weight: bold
@@ -278,14 +277,35 @@
             text-transform: uppercase
             color: #FFFFFF
             margin-right: 15px
+          svg
+            path
+              transition-duration: .4s
       .header__mob-menu
+        display: grid
+        grid-template-columns: 1fr 1fr
         ul
           display: grid
-          grid-template-columns: 1fr 1fr
+          grid-template-columns: 1fr
           grid-gap: 25px 0
           li
             padding-left: 70px
+            position: relative
+            width: 100%
+            cursor: pointer
+            display: flex
+            &:after
+              content: ''
+              position: absolute
+              width: 4px
+              height: 0px
+              left: 0
+              transition-duration: .4s
+              top: 50%
+              transform: translateY(-50%)
+              background: #FBB500
             &:hover
+              &:after
+                height: 18px
               a
                 color: #FBB500
             a
@@ -298,19 +318,25 @@
               letter-spacing: 0.05em
               text-transform: uppercase
               color: #FFFFFF
-          .header__mob-link_active
-            position: relative
-            &:after
-              content: ''
-              position: absolute
-              width: 4px
-              height: 18px
-              left: 0
-              top: 50%
-              transform: translateY(-50%)
-              background: #FBB500
-            a
-              color: #FBB500
+              width: 100%
+        .header__ul-wrapper
+          position: relative
+          ul
+            left: -5px
+            z-index: 2
+            top: 0
+            width: 100%
+            position: absolute
+            opacity: 0
+            visibility: hidden
+            transition-duration: .4s
+            li
+              &:after
+                display: none
+          .ul_active
+            opacity: 1
+            visibility: visible
+            transform: translateX(0)
       .header__mob-socials
         display: flex
         align-items: center
@@ -318,6 +344,9 @@
         margin-left: 70px
         .header__mob-social
           cursor: pointer
+          transition-duration: .4s
+          &:hover
+            opacity: 0.7
           &:not(:last-child)
             margin-right: 30px
 .header_white
@@ -346,6 +375,8 @@
       &:first-child
         path
           fill: #00245B
+        .path
+          fill: #FFFFFF
       &:last-child
         display: block
         position: absolute
@@ -368,6 +399,8 @@
       &:first-child
         path
           fill: #FFFFFF
+        .path
+          fill: #00245b
   .container
     nav
       .header__menu

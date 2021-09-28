@@ -53,95 +53,14 @@
 @import "know"
 @import "popup"
 section
-  display: none
-.brands
-  display: flex
-.business
-  display: flex
-.story
-  display: flex
-.more
-  display: flex
-.map
-  display: flex
-.about
-  display: flex
-.experts
-  display: flex
-.fun
-  display: flex
-.people
-  display: flex
-.distribution
-  display: flex
-.two
-  display: flex
-.history
-  display: flex
-.bottle
-  display: flex
-.country
-  display: flex
-.news
-  display: flex
-.perfect
-  display: flex
-.explore
-  display: flex
-.question
-  display: flex
-.locator
-  display: flex
-.online
-  display: flex
-.small
-  display: block
-.blog
-  display: block
-.media
-  display: block
-.intro
-  display: flex
-.late
-  display: flex
-.corporate
-  display: flex
-.car
-  display: block
-.vac
-  display: flex
-.contact
-  display: block
-.product
-  display: flex
-.not-not
-  display: flex
-.perfect
-  display: flex
-.know
-  display: flex
-.all
-  display: block
-.drink
-  display: block
-.tip
-  display: flex
-.four
-  display: flex
-.future
-  display: flex
-.envi
-  display: block
-.policy
-  display: block
-.com
-  display: block
-.log
-  display: flex
-.post
-  display: block
-.recent
-  display: flex
+  transform: translateY(200px)
+  opacity: 0
+  visibility: hidden
+  transition-duration: .4s
+.section_active
+  transform: translateY(0)
+  opacity: 1
+  visibility: visible
 *
   margin: 0
   padding: 0
@@ -149,6 +68,8 @@ section
   list-style-type: none
   text-decoration: none
   border-radius: 0
+  -webkit-font-smoothing: antialiased!important
+  text-rendering: optimizeLegibility!important
 .main
   overflow: hidden
 .input-text

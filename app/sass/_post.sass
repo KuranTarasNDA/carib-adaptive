@@ -2,6 +2,9 @@
   position: relative
   margin-top: 120px
   overflow: hidden
+  transform: translateY(0)
+  opacity: 1
+  visibility: visible
   @media (max-width: 1024px)
     margin-top: 65px
   .bg
@@ -23,7 +26,7 @@
     border-right: 1px solid rgba(0, 36, 91, 0.1)
     position: relative
     @media (max-width: 1024px)
-      padding: 40px
+      padding: 80px 40px 0 40px
     &:before
       content: ''
       position: absolute
@@ -102,7 +105,7 @@
           font-family: Apotek, sans-serif
           font-style: normal
           font-weight: 716
-          font-size: 18px
+          font-size: 17px
           line-height: 140%
           letter-spacing: 0.05em
           text-transform: uppercase
@@ -119,9 +122,18 @@
             height: 50px
             display: flex
             align-items: center
+            transition-duration: .4s
             justify-content: center
+            &:hover
+              border-color: #00245b
+              svg
+                g
+                  opacity: 1
             &:not(:last-child)
               margin-right: 15px
+            svg
+              g
+                transition-duration: .4s
     .post__container-bg
       img
         position: absolute

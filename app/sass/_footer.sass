@@ -37,7 +37,7 @@
               font-family: Apotek, sans-serif
               font-style: normal
               font-weight: 800
-              font-size: 18px
+              font-size: 17px
               transition-duration: 0.4s
               line-height: 100%
               letter-spacing: 0.05em
@@ -142,8 +142,11 @@
                 height: 1px
             .footer__logo
               margin-right: 50px
+              transition-duration: .4s
               @media (max-width: 911px)
                 margin-right: 10px
+              &:hover
+                opacity: 0.7
               svg
                 @media (max-width: 911px)
                   width: 93px
@@ -180,8 +183,11 @@
               @media (max-width: 911px)
                 margin-bottom: 30px
               .footer__social
+                transition-duration: .4s
                 &:not(:last-child)
                   margin-right: 30px
+                &:hover
+                  opacity: 0.7
                 svg
                   width: 45px
                   height: 45px

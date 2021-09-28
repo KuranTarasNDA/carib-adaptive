@@ -7,7 +7,7 @@
     border-right: 1px solid rgba(0, 36, 91, 0.1)
     position: relative
     @media (max-width: 1024px)
-      padding: 80px 40px 100px 40px
+      padding: 80px 40px 80px 40px
     &:before
       content: ''
       position: absolute
@@ -55,12 +55,20 @@
       .late__item
         display: flex
         flex-direction: column
+        cursor: pointer
+        &:hover
+          .late__img
+            opacity: .8
+          .late__text
+            .late-title
+              color: #FBB500
         &:not(:last-child)
           margin-bottom: 100px
           @media (max-width: 768px)
             margin-bottom: 60px
         .late__img
           height: 400px
+          transition-duration: .4s
           @media (max-width: 1024px)
             height: 300px
           @media (max-width: 768px)
@@ -90,7 +98,8 @@
             font-family: Apotek, sans-serif
             font-style: normal
             font-weight: 800
-            font-size: 24px
+            transition-duration: .4s
+            font-size: 23px
             line-height: 100%
             letter-spacing: 0.05em
             text-transform: uppercase
@@ -103,7 +112,7 @@
       font-family: Apotek, sans-serif
       font-style: normal
       font-weight: 716
-      font-size: 18px
+      font-size: 17px
       line-height: 140%
       letter-spacing: 0.05em
       text-transform: uppercase
@@ -115,10 +124,13 @@
       border-radius: 100px
       position: relative
       z-index: 1
+      transition-duration: .4s
       @media (max-width: 768px)
         width: 100%
         text-align: center
         margin-top: 60px
+      &:hover
+        background: #FBB500
     .late__container-bg
       img
         &:first-child
@@ -129,7 +141,7 @@
 .late_corporate
   .container
     @media (max-width: 1024px)
-      padding-bottom: 60px
+      padding-bottom: 40px
     &:before
       height: calc(100% - 396px)
       bottom: 150px

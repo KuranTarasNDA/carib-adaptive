@@ -143,6 +143,9 @@
                 transform: translateY(-50%)
                 cursor: pointer
                 right: 40px
+                transition-duration: .4s
+                &:hover
+                  opacity: 0.7
               .appearance
                 position: absolute
                 top: 50%
@@ -204,7 +207,7 @@
               font-family: Apotek, sans-serif
               font-style: normal
               font-weight: 716
-              font-size: 18px
+              font-size: 17px
               line-height: 140%
               letter-spacing: 0.05em
               text-transform: uppercase
@@ -217,10 +220,14 @@
               margin: auto 0 0 auto
               cursor: pointer
               white-space: nowrap
+              transition-duration: .4s
               @media (max-width: 768px)
                 margin: 0
                 width: 100%
                 text-align: center
+              &:hover
+                background: #00245b
+                color: #FBB500
 
 
 

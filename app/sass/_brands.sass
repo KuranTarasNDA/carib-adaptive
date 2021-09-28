@@ -20,7 +20,6 @@
     @media (max-width: 768px)
       border-right: none
       padding-top: 80px
-      padding-bottom: 20px
     &:after
       content: ''
       position: absolute
@@ -70,7 +69,7 @@
         font-style: normal
         cursor: pointer
         font-weight: 800
-        font-size: 18px
+        font-size: 17px
         line-height: 100%
         text-transform: uppercase
         color: #00245B
@@ -82,6 +81,8 @@
           text-align: center
           padding: 17px 0
           font-size: 16px
+        &:hover
+          background: #FBB500
       .brands-btn_active
         background: #FBB500
     .brands__wrappers
@@ -119,6 +120,8 @@
               @media (max-width: 768px)
                 font-size: 18px
                 display: none
+              &:hover
+                color: #FBB500
               &:nth-child(1)
                 @media (max-width: 768px)
                   display: flex
@@ -259,7 +262,7 @@
                       font-family: Apotek, sans-serif
                       font-style: normal
                       font-weight: 716
-                      font-size: 18px
+                      font-size: 17px
                       line-height: 140%
                       letter-spacing: 0.05em
                       text-transform: uppercase
@@ -290,8 +293,11 @@
                   height: 1px
                   background: #E6EAEF
                 .brands__beer-social
+                  transition-duration: .4s
                   &:not(:last-child)
                     margin-right: 20px
+                  &:hover
+                    opacity: 0.7
               .brands__p
                 margin-left: auto
                 position: relative
@@ -376,7 +382,7 @@
     padding-top: 100px
     @media (max-width: 768px)
       padding-top: 80px
-      padding-bottom: 40px
+      padding-bottom: 0
     &:after
       height: calc(100% - 218px)
       top: auto

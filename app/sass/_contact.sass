@@ -1,6 +1,9 @@
 .contact
   margin-top: 120px
   overflow: hidden
+  transform: translateY(0)
+  opacity: 1
+  visibility: visible
   @media (max-width: 1024px)
     margin-top: 65px
   .bg
@@ -22,7 +25,7 @@
     @media (max-width: 1024px)
       padding: 80px 0 40px 40px
     @media (max-width: 768px)
-      padding: 80px 0 40px 0
+      padding: 80px 0 0px 0
       flex-direction: column
     .contact__left
       display: flex
@@ -34,7 +37,7 @@
         margin-right: 0
         width: 100%
         max-width: 100%
-        padding: 0 40px 40px 40px
+        padding: 0 40px 80px 40px
       h1
         margin-bottom: 20px
         font-family: RamaGothicMW01-Heavy, sans-serif
@@ -199,10 +202,13 @@
             margin-right: auto
             cursor: pointer
             margin-top: 40px
+            transition-duration: .4s
             @media (max-width: 768px)
               width: 100%
               text-align: center
               margin-top: 30px
+            &:hover
+              background: #00245b
     .contact__all::-webkit-scrollbar
       width: 0
     .contact__all
